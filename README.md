@@ -32,4 +32,16 @@ A TCP client-server program where:
 - 📬 Server replies with `"true"` or `"false"` based on the result.
 - 🛑 Typing `"quit"` ends the session.
 
+###udp1:
+
+## udpchatthreaded
+
+A multithreaded UDP-based chat system where:
+
+- 🔁 Both client and server can **send and receive messages simultaneously** using `pthread`.
+- 🧵 A separate **receive thread** continuously listens for incoming messages.
+- 📤 `sendto()` is used to send messages and `recvfrom()` to receive them.
+- 🖥️ Designed for **full-duplex chat** over UDP between two endpoints.
+
+
 
