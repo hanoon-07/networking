@@ -8,6 +8,8 @@
 
 ### tcp:
 
+A simple TCP client-server program where:
+
 - The **client** sends a string to the server.
 - The **server** reverses the string and sends it back.
 - Communication ends when the client sends `"quit"`.
@@ -21,5 +23,13 @@ A TCP client-server program that:
 - 💬 Server replies with a custom message like: `"the server says hi to <name>"`.
 - 🔁 Client prints the response for each struct sent.
 
+### pali:
+
+A TCP client-server program where:
+
+- 🧑‍💻 Client sends a string to the server.
+- 🔁 Server checks if the string is a **palindrome** (same forward and backward).
+- 📬 Server replies with `"true"` or `"false"` based on the result.
+- 🛑 Typing `"quit"` ends the session.
 
 
