@@ -6,7 +6,7 @@
 - **Server receives:** the structure, extracts the `name` field, prints it to the console, and sends back a greeting message.
 - **Client receives:** the response message `"hello from server\n"` and prints it.
 
-### tcpreverse
+### tcp:
 
 - The **client** sends a string to the server.
 - The **server** reverses the string and sends it back.
