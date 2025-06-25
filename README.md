@@ -12,5 +12,14 @@
 - The **server** reverses the string and sends it back.
 - Communication ends when the client sends `"quit"`.
 
+### tcpchar:
+
+A TCP client-server program that:
+
+- 📦 Client sends an array of structs (each with `rollno` and `name`) to the server.
+- 🧑‍💻 Server receives one struct at a time and reads the `name` field.
+- 💬 Server replies with a custom message like: `"the server says hi to <name>"`.
+- 🔁 Client prints the response for each struct sent.
+
 
 
