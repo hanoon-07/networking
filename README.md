@@ -43,10 +43,30 @@ A multithreaded UDP-based chat system where:
 
 ### timeserver:
 
+A simple UDP-based time server where:
+
 - ⏱️ Client sends `"get"` to the server requesting the current time.
 - 🖥️ Server checks the message and replies with the **system time** using `ctime()`.
 - 🔁 This process runs in a continuous loop for both server and client.
 - 📡 Demonstrates time-based UDP communication using `sendto()` and `recvfrom()`.
+
+### mutliuserchat:
+
+A multi-client TCP chat application using threads, where:
+
+- 💬 Clients connect to the server, provide their **name**, and start chatting.
+- 📣 Server **broadcasts messages** from one client to all others using `send()`.
+- 🧵 Each client is handled in a separate thread to allow simultaneous communication.
+- 🔁 Client runs a listener thread to print incoming messages while sending new ones.
+
+### fileserver:
+
+A TCP-based file server that handles multiple clients using `fork()`:
+
+- 📄 Client requests a **filename**; the server sends back the file contents line-by-line.
+- 🔁 Server spawns a **new process** for each client using `fork()` (each with its own PID).
+- ❌ If the file is not found, the server responds with an error message.
+- 🔚 Transmission ends with a special marker (`__END__`) to indicate end of file.
 
 
 
