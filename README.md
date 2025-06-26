@@ -41,5 +41,12 @@ A multithreaded UDP-based chat system where:
 - 📤 `sendto()` is used to send messages and `recvfrom()` to receive them.
 - 🖥️ Designed for **full-duplex chat** over UDP between two endpoints.
 
+### timeserver:
+
+- ⏱️ Client sends `"get"` to the server requesting the current time.
+- 🖥️ Server checks the message and replies with the **system time** using `ctime()`.
+- 🔁 This process runs in a continuous loop for both server and client.
+- 📡 Demonstrates time-based UDP communication using `sendto()` and `recvfrom()`.
+
 
 
