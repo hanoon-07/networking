@@ -32,9 +32,7 @@ A TCP client-server program where:
 - 📬 Server replies with `"true"` or `"false"` based on the result.
 - 🛑 Typing `"quit"` ends the session.
 
-###udp1:
-
-## udpchatthreaded
+### udp1:
 
 A multithreaded UDP-based chat system where:
 
