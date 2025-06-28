@@ -96,6 +96,15 @@ A TCP-based simulation of the **Selective Repeat ARQ protocol** where:
 - 🧠 Successfully acknowledged frames (`'a'`) are not retransmitted — unlike Go-Back-N.
 - 🔁 Mimics selective retransmission and out-of-order recovery behavior of Selective Repeat ARQ.
 
+### dvr:
+
+A C implementation of the **Distance Vector Routing Algorithm**:
+
+- 🧠 Each node builds a **routing table** based on distance vectors from neighbors.
+- 🔁 Uses the **Bellman-Ford algorithm** to iteratively update shortest paths.
+- ❌ Unreachable nodes (input as `-1`) are internally treated as `infinity (9999)`.
+- 📊 Outputs the final routing table for each router: destination, next hop, and distance.
+
 
 
 
