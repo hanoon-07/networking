@@ -68,5 +68,16 @@ A TCP-based file server that handles multiple clients using `fork()`:
 - ❌ If the file is not found, the server responds with an error message.
 - 🔚 Transmission ends with a special marker (`__END__`) to indicate end of file.
 
+### stopandwait:
+
+A TCP-based simulation of the Stop-and-Wait ARQ protocol where:
+
+- 📤 Client sends a sequence number (`int`) to the server.
+- 🎲 Server randomly **simulates transmission success or failure** using `rand()`.
+- 📨 If success, server replies with `'a'` (ACK); otherwise `'e'` (error).
+- 🔁 Client only increments and sends next sequence number after receiving ACK, else it **resends** the same data.
+
+
+
 
 
