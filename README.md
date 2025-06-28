@@ -87,6 +87,15 @@ A TCP-based simulation of the **Go-Back-N ARQ protocol** where:
 - 🔁 Demonstrates the working of **Go-Back-N ARQ** with selective retransmission handling and window-based flow control.
 
 
+### selective:
+
+A TCP-based simulation of the **Selective Repeat ARQ protocol** where:
+
+- 📦 Client sends frames in windows (size = 5), storing only failed transmissions.
+- 🎯 On receiving `'e'` from the server, client **selectively retransmits** only the erroneous frames.
+- 🧠 Successfully acknowledged frames (`'a'`) are not retransmitted — unlike Go-Back-N.
+- 🔁 Mimics selective retransmission and out-of-order recovery behavior of Selective Repeat ARQ.
+
 
 
 
