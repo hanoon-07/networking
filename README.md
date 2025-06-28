@@ -77,6 +77,15 @@ A TCP-based simulation of the Stop-and-Wait ARQ protocol where:
 - 📨 If success, server replies with `'a'` (ACK); otherwise `'e'` (error).
 - 🔁 Client only increments and sends next sequence number after receiving ACK, else it **resends** the same data.
 
+### gobackn:
+
+A TCP-based simulation of the **Go-Back-N ARQ protocol** where:
+
+- 📤 Client sends data frames (`int`) in a window of size 5 to the server.
+- 🎲 Server randomly simulates an **error** (`'e'`) or **acknowledgement** (`'a'`) using `rand()`.
+- 🧠 If error occurs, client stores the failed sequence numbers and **resends them** in the next window.
+- 🔁 Demonstrates the working of **Go-Back-N ARQ** with selective retransmission handling and window-based flow control.
+
 
 
 
